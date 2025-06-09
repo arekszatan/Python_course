@@ -1,11 +1,5 @@
 
-contacts = {
-    "Ola" : "ola@example.com",
-    "Daniel" : 30,
-    "Ania" : "ania@example.com"
-}
-
-contacts["Rafał"] = "rafał@example.com"
+contacts = {"Ola": "ola@example.com", "Daniel": 30, "Ania": "ania@example.com", "Rafał": "rafał@example.com"}
 
 print(contacts["Ola"])
 print(contacts["Daniel"])
