@@ -11,10 +11,10 @@
 # 3) Jeśli podana wartośc wieku psa jest mniejsza niż 0, wyświetl komunikat o błędzie.
 # 4) Wyświetl wynik obliczeń w konsoli.
 
-print("Podaj wiek psa: ")
+#print("Podaj wiek psa: ")
 
 try:
-    dog_age = float(input())
+    dog_age = float(input("Podaj wiek psa: "))
     human_age = 0
 
     if 1 >= dog_age > 0:
@@ -31,4 +31,20 @@ try:
 
 except ValueError:
     print("Wiek psa musi być liczbą.")
+
+
+dog_age = float(input("podaj wiek psa:"))
+
+human_age = 0
+
+if dog_age < 0:
+    print("Nieprawidłowa wartość")
+elif dog_age <= 1:
+    human_age = dog_age * 15
+elif dog_age <= 2:
+    human_age = 15 + (dog_age - 1) * 9
+else:
+    human_age = 24 + (dog_age - 2) * 5
+
+print("Wiek psa w ludzkich latach:", human_age)
 
