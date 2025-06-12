@@ -1,0 +1,63 @@
+Jenkins to narzędzie typu open source do automatyzacji procesów
+tworzenie oprogramowania, znane głównie z zastosowań w CI/CD -
+czyli ciągłej integracji (Continuos Integration) i ciągłego
+dostarczania (Continuos Delivery/Deployment).
+
+Co to oznacza w praktyce?
+Jenkins pozwala programistom:
+- Automatycznie budować aplikacje po każdym zapisie zmian w kodzie,
+- Testować kod automatycznie, bez ręcznego uruchamiania testów,
+- Wdrażać aplikacje na serwery (np. po zaliczeniu testów),
+- Zarządzać procesem tworzenia oprogramowania krok po kroku
+(build > test > deploy).
+
+Przykład zastosowania:
+1) Programista zapisuje zmiany (commit) w repozytorium Git.
+2) Jenkins wykrywa zmianę i automatycznie:
+- buduje aplikację,
+- uruchamia testy jednostkowe,
+- jeśli wszystko działa - wdraża aplikację na serwer testowy lub produkcyjny.
+
+Kluczowe cechy Jenkins:
+- Działa jako serwer WWW (z interfejsem przez przeglądarkę).
+- Posiada setki wtyczek (pluginów) - do Gita, Dockera, Slacka, JIRA, Maven, itp.
+- Obsługuje wiele języków programowania i technologii.
+- Można go łatwo zintegrować z narzędziami DevOps.
+- Jest rozkładalny na agenty - można budować i testować kod na wielu maszynach równocześnie.
+
+Przykład "pipeline'u" (potoku) w Jenkinsie (skrypt w Groovy):
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Budowanie aplikacji...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Uruchamianie testów...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Wdrażanie aplikacji...'
+            }
+        }
+    }
+}
+
+Jenkins vs GitLab CI vs GitHub Actions:
+| Cecha          | Jenkins               | GitLab CI                      | GitHub Actions       |
+| -------------- | --------------------- | ------------------------------ | -------------------- |
+| Instalacja     | Własny serwer         | Wbudowany w GitLab             | Wbudowany w GitHub   |
+| Konfiguracja   | Bardziej techniczna   | Prosta (plik `.gitlab-ci.yml`) | Prosta (plik `.yml`) |
+| Rozszerzalność | Bardzo duża (pluginy) | Ograniczona                    | Średnia              |
+| Elastyczność   | Bardzo duża           | Średnia                        | Średnia              |
+
+Podsumowując:
+Jenkins to potężne narzędzie do automatyzacji procesów
+programistycznych, szeroko stosowane w firmach i projektach DevOps.
+Pomaga szybko wykrywać błędy, automatycznie testować i wdrażać
+aplikacje, oszczędzając czas i zwiększając jakość kodu.
+

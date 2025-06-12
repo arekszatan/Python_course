@@ -1,0 +1,50 @@
+Git to rozproszony system kontroli wersji (ang. Distributed Version
+Control System - DVCS), stworzony przez Linusa Torvaldsa (twórcę
+Linuksa) w 2005 roku.
+
+Jest to jedno z najważniejszych narzędzi dla programistów - pozwala
+śledzić zmiany w kodzie, współpracować z innymi oraz cofać się do
+wcześniejszych wersji projektu.
+
+Co umożliwia Git?
+- Zapisuje historię zmien w plikach projektu.
+- Pozwala pracować zespołowo bez ryzyka nadpisywania swojej pracy.
+- Umożliwia tworzenie gałęzi (branchy), czyli równoległych wersji
+projektu.
+- Działa lokalnie, a także współpracuje z zewnętrznymi serwisami, jak
+GitHub, GitLab czy Bitbucket.
+
+Przykład podstawowych komend Gita:
+git init # inicjalizuje nowe repozytorium Git w folderze
+git status # Pokazuje bieżący status zmian
+git add plik.py # Dodaje plik do przygotowania do commitowania
+git commit -m "Opis zmian." # Zapisuje zmiany z opisem
+git log # Pokazuje historię commitów
+
+Kluczowe pojęcia:
+- Repozytorium (repo) - katalog, w którym Git śledzi zmiany.
+- Commit - zapis zmien z komentarzem (punkt w historii)
+- Branch (gałąź) - niezależna wersja kodu, np. do testów nowych funkcji.
+- Merge - łączenie gałęzi.
+- Remote - zdalne repozytorium (np. na GitHubie)
+- Clone / Pull / Push - pobieranie i wysyłanie kodu między
+repozytorium lokalnym a zdalnym.
+
+Git vs GitHub:
+- Git to narzędzie do zarządzania wersjami kodu (działa lokalnie).
+- GitHub to internetowa platforma do przechowywania repozytoriów
+Git w chmurze i współpracy nad kodem.
+
+Dlaczego Git jest tak popularny?
+- Jest szybki i bezpieczny.
+- Pozwala na pełną historię zmian.
+- Ułatwia pracę zespołową i otwartoźródłowe projekty.
+- Jest standardem branżowym w niemal każdym projekcie
+programistycznym.
+
+Podsumowując:
+Git to narzędzie, które pozwala programistom śledzić zmiany, cofać się
+w czasie, pracować zespołowo i bezpiecznie rozwijać projekty. Bez
+względu na to, czy pracujesz sam, czy w zespole - znajomość Gita to
+podstawa w nowoczesnym programowaniu.
+
