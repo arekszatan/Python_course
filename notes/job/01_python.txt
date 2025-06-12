@@ -1,0 +1,22 @@
+Python to wysokopoziomowy, interpretowany język programowania, który jest znany z
+czytelnej składni i łatwości użycia. Został stowrzony przez Guidona van Rossuma i
+po raz pierwszy wydany w 1991 roku.
+
+Cechy pythona:
+- Prosta składnia - bardzo zbliżona do języka angielskiego, co ułatwia naukę nawet
+osobom bez doświadczenia programistycznego.
+- Interpetowany język - kod jest wykonywany linia po lini, co ułatwia debugowanie
+- Dynamiczne typowanie - nie trzeba się deklarować typów zmiennych. Python sam
+rozpoznaje typy w czasie działania programu.
+- Wielozadaniowość - nadaje się do różnych zastosowań: od tworzenia stron
+internetowych, przez analizę danych, po ssztuczną inteligencję.
+- Rozbudowana biblioteka standardowa - zawiera wiele gotowych narzędzi i funkcji.
+- Ogromna społeczność - dużo darmowych materiałów edukacyjnych i rozszerzeń (np. biblioteki na PyPI
+
+Zastosowanie:
+- Tworzenie stron internetowych - np. z użyciem Django lub Flask
+- Analiza danych i uczenie maszynowe - np. z użyciem biblioteki pandas, NumPy, scikit-learn
+TensorFlow
+- Automatyzacja zadań (skrypty) - np. automatyczne przetwarzanie plików
+- Tworzenie aplikacji desktopowych i serverowych
+- Edukacja - bardzo często używany jako pierwszy język programowania

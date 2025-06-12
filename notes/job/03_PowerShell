@@ -1,0 +1,42 @@
+PowerShell to zaawansowana konsola (shell) i język skryptowy opracowany przez
+firmę Microsoft, służący do automatyzacji zadań systemowych i zarządzania
+konfiguracją głównie w systemach Windows, ale działą także na Linux i macOS
+(w wersji PowerShell Core).
+
+PowerShell pozwala:
+- Wykonywać polecenia systemowe (tak jak CMD, czyli Wiersz poleceń)
+- Tworzyć skrypty automatyzujące różne zadania (np. tworzenie użytkowników,
+kopiowanie plików, uruchamianie programów)
+- Zarządzać systemem, siecią, usługami, procesami i rejestrem
+- Łączyć się z usługami w chmurze, np. Azure, Office 365
+- Pracować z danymi w formacie obiektowym (PowerShell opiera się na .NET i operuje
+na obiektach, a nie tylko na tekstach jak tradycyjne shelle)
+
+Przykładowe polecenie:
+
+Get-Process - To polecenie pokazuje listę aktualnie działających procesów.
+
+Przykład prostego skryptu:
+
+$name = Read-Host "Podaj swoje imię"
+Writ-Output "Cześć, $name!"
+
+Różnice między PowerShellem a CMD:
+CMD)
+- Działa na tekstach
+- Ograniczona funkcjonalność
+- Starszy i prostszy
+PowerShell)
+- Działa na obiektach
+- Bardzo rozbudawana, programowalna
+-Nowocześniejszy i bardziej zaawansowany
+
+PowerShell Core vs Windows PowerShell:
+- Windows PowerShell - starsza wersja, dostępna tylko na Windows
+- PowerShell Core (obecnie po prostu PowerShell 7+) - nowoczesna, otwartoźródłowa wersja,
+działa na Windows, Linux i macOS
+
+Podsumowując:
+PowerShell to potężne narzędzie do zarządzania systemem i automatyzacji. Jest
+sczególnie przydatny dla administratorów, ale przydaje się też programistom i zaawansowanym
+użytkownikom do automatyzowania powtarzalnych zadań.

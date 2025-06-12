@@ -1,0 +1,21 @@
+PyPI (Python Package Index) to oficjalne repozytorium pakietów Pythona, dostępne pod
+adresem https://pypi.org
+
+PyPI to miejsce, z którego możesz pobierać i instalować gotowe biblioteki i moduły
+Pythona, stworzone przez innych programistów. Dzięki temu nie musisz pisać wszystkiego
+od zera - możesz korzystać z tysięcy gotowych narzędzi.
+
+Korzystanie przykład:
+Najczęściej używa się narzędzzia 'pip' - to menadżer pakietów dla Pythona.
+Aby zainstalować bibliotekę 'requests' (do wysyłania zapytań HTTP), wpisujesz w
+terminalu:
+
+pip install requests
+
+To polecenie pobiera paczkę z PyPI i instaluje lokalnie
+
+Co znajdziesz na PyPI:
+- Biblioteki do analizy danych (np. pandas, numpy)
+- Narzędzia do tworzenia stron internetowych (flask, django)
+- Pakiety do uczenia maszynowego (scikit-learn, tensorflow)
+- Moduły do testowania, automatyzacji, przetwarzania teksty i wiele innych

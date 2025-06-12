@@ -1,0 +1,49 @@
+Bash (skrót od Bourne Again SHell) to popularny interpreter poleceń
+(shell) i język skryptowy używany głównie w systemach operacyjnych
+Linux i macOS (a czasem tę w Windows, np. przez WSL - Windows Subsystem for Linux).
+
+Bash pozwala:
+- Wydawać polecenia do systemu operacyjnego (np. tworzyć pliki,
+poruszać się po katalogach, instalować programy),
+- Tworzyć skrypty - czyli pliki tekstowe z zestawem poleceń
+wykonywanych automatycznie
+- Łączyć polecenia i przetworzać dane w terminalu,
+- Automatyzować codzienne zadania administracyjne i programistyczne.
+
+Przykładowe polenenia w Bashu:
+
+ls # Wyświetla pliki i foldery w katalogu
+cd folder # Wchodzi do folderu
+mkdir nowy_folder # Tworzy nowy folder
+rm plik.txt # Usuwa plik
+
+Przykład prostego skryptu w Bashu:
+#!/bin/bash
+echo "Jak masz na imię?"
+read name
+echo "Cześć, $name!"
+
+Bash vs PowerShell:
+Bash)
+- Głównie na Linux/macOS
+- Operuje na tekstach
+- Starszy (od lat 80)
+- Lżejszy i szybszy w prostych zadaniach
+PowerShell)
+- Głównie na WIndows (ale też Linux/macOS)
+- Operuje na obiektach (dzieki .NET)
+- Nowszy (od 2006 r.)
+- Bardziej zaawansowany w złożonych scenariuszach
+
+Gdzie znajdziemy Basha?
+Linux - domyślnie zainstalowany w niemal każdej dystrybucji
+(Ubuntu, Debian, Fedora itd.)
+macOS - dostępny z terminala (choć nowe wersje używają Zsh jako
+domyślnego)
+Windows - przez WSL (Windows Subsystem for Linux) lub Git Bash
+
+Podsumowując:
+Bash to podstawowe narzędzie w świecie Linux i DevOps - pozwala
+wydajnie zarządzać systemem, automatyzować zadania i pisać skrypty.
+Jest lekki, szybki i bardzo popularny w środowiskach serwerowych i
+programistycznych.
