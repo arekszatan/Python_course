@@ -1,0 +1,27 @@
+TensorFlow to otwartoźródłowa biblioteka programistyczna stworzona
+przez Google, służąca do tworzenia i trenowania modeli uczenia
+maszynowego (ang. machnie learning) i głębokiego uczenia (ang. deep
+learning). Została zaprojektowana z myślą o łatwości wdrażania modeli
+zarówno na komputerach osobistych, jak i na urządzeniach mobilnych
+czy w chmurze.
+
+Główne cechy TensorFlow:
+- Obsługa sieci neuronowych: Można za jego pomocą budować i
+trenować skomplikowane modele, takiej jak konwolucyjne sieci
+neuronowe (CNN), rekurencyjne sieci neuronowe (RNN) itp.
+- Skalowalność: Nadaje się do użytku zarówno na małych
+urządzeniach (np. smartfonach), jak i dużych systemach
+chmurowych (np. Google Cloud).
+- Wsparcie dla GPU i TPU: Pozwala na przyspieszenie obliczeń dzięki
+wykorzystaniu kart graficznych lun jednostek TPU (Tensor
+Processing Unit)
+- API wysokiego poziomu (Keras): TensorFlow integruje się z Keras
+uproszczonym interfejsem do budowania modeli, który jest
+przystępniejszy dla początkujących.
+
+Przykłady zastosowania:
+- Rozpoznawanie obrazów i twarzy
+- Przetwarzanie języka naturalnego (np. tłumaczenie maszynowe)
+- Wykrywanie oszustów
+- Systemy rekomendacyjne (np. w e-commerce)
+- Analiza danych czasowych (np. prognozy finansowe)

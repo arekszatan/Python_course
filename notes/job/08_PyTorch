@@ -1,0 +1,37 @@
+PyTorch to popularna, otwartoźródłowa biblioteka do uczenia
+maszynowego i głębokiego uczenia (deep learning), stworzona przez
+Facebook AI Research (FAIR). Jest jedną z głównych alternatyw dla
+TensorFlow i zdobyła dużą popularność wśród badaczy oraz inżynierów
+dzięki sojej elastyczności i czytelności kodu.
+
+Czym się wyróżnia PyTorch?
+- Dynamiczne grafy obliczeniowe: W przeciwieństwie do TensorFlow
+(w starszych wersjach), PyTorch pozwala tworzyć tzw. dynamiczne
+grafy obliczeniowe - czyli model jest "tworzony w locie" w takcie
+działania programu. To sprawia, że kod jest bardziej intuicyjny i
+łatwiejszy do debugowania.
+- Intuicyjna składnia w stylu Pythona: PyTorch bardzo przypomina
+klasyczny kod Pythona i NumPy, co czyni go przystępnym dla
+programistów.
+- Wsparcie dla GPU: Tak jak TensorFlow, PyTorch może korzystać z
+procesorów graficznych (GPU), co znacząco przyspiesza trening
+modeli.
+- Silne wsparcie społeczności naukowej: Wiele publikacji
+naukowych i projektów badawczych wykorzystuje właśnie PyTorch
+
+Najważniejsze komponenty PyTorch:
+- torch - Główna biblioteka, zawiera operacje na tensorach
+(tablicach danych).
+- torch.nn - Moduł do budowania sieci neuronowych.
+- torch.optim - Zawiera algorytmy optymalizacji (np. SGD, Adam)
+- torch.utlis.data - Narzędzie do ładownia i przetwarzania
+danych.
+- torchvision - Dodatkowa biblioteka zawierająca popularne
+zestawy danych i modele wizji komputerowej.
+
+Przykłady zastosowań:
+- Rozpoznawanie obrazów (np. klasyfikacja, detekcja obiektów)
+- Przetwarzanie języka naturalnego (mp. chatboty, tłumaczenie)
+- Modele generatywne (np,GAN, autoenkodery)
+- Modele sekwencyjne (np. analiza danych czasowych)
+
