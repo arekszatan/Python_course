@@ -2,8 +2,8 @@
 Job into python:
 - Python +
 - TensorFlow +
-- PyTorch
-- Langchain
+- PyTorch +
+- Langchain +
 - Generative AI
 - Jenkins +
 - GitLab

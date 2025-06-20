@@ -1,0 +1,50 @@
+LangChain to otwartoźródłowa biblioteka (i JavaScript),
+zaprojektowana do budowania aplikacji opartych na dużych modelach
+językowych (LLM), takich jak ChatGPT, GPT-4, Claude, LLaMA i inne.
+
+LangChain ułatwia tworzenie bardziej zaawansowanych i
+dynamicznych systemó∑ AI, które mogą:
+- łączyć się z danymi (np. pliki PDF, bazy danych, strony internetowe
+- zapamiętać kontekst rozmowy (pamięć),
+-podejmować decyzje (agentowość)
+- korzystać z narzędzi (np. wyszukiwarka, kalkulator)
+- integrować różne zródła wiedzy (RAG - Retrieval-Augmented
+Generation).
+
+Do czego służy LangChain:
+LangChain nie jest samodzielnym modelem AI - to framework, który pozwala:
+- łączyć modele językowe z własnymi danymi
+- budować chatboty i asystentów z pamięcią
+- tworzyć aplikacje, które potrafią planować i działać (np. analizować
+dane, generować raporty)
+
+Kluczowe komponenty LangChain:
+LLM - Obsługuje modele językowe, np. GPT-4, Claude, LLaMA.
+Chains - Sekwencje działań, np. zapytania do modelu, przetwarzanie wyniku
+Agents - Modele, które potrafi.ą podejmować decyzje i używać narzędzi (np. kalkulatora)
+Tools - Zewnętrzne narzędzie, które agent może wywołać (np.
+wyszukiwanie w Google, przeszukiwanie PDF).
+Memory - Pozwala na zapamiętywanie historii rozmowy lub kontekstu.
+Retrievers - Pozwalają na pobieranie informacji z zewnętrznych
+źródeł (pliki, bazy danych)
+
+Przykłady zastosowania:
+- Asystent prawniczy: poszukuje dokumenty prawne, odpowiada
+na pytania klienta
+- Wirtualny doradca finansowy: analizuje dane użytkownika i
+generuje raport.
+- Chatbot obsługujący pliki PDF: użytkownik zadaje pytanie na
+podstawie załadowanego dokumentu.
+
+Przykłądowy kod w Pythonie:
+
+from langchain.chat_models import ChatOpenAI
+from langchain.chains import ConversationChain
+from langchain.memory import ConversationBufferMemory
+
+llm = ChatOpenAI(model_name="gpt-4")
+memory = ConversationBufferMemory()
+conversation = ConversationChain(llm=llm, memory=memory)
+
+response = conversation.predict(input="Jakie są zalety energii słonecznej?")
+print(response)
