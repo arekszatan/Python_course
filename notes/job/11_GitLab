@@ -1,0 +1,37 @@
+GitLab to platforma do zarządzania kodem źródłowym i projektami
+programistycznymi, oparta na systemie kontroli wersji Git. Jest
+podobna do GitHub, ale oferuje szerszy zestaw narzędzi typu "DevOps
+all-in-one", co oznacza, że możesz w jednym miejscu:
+- zarządzać kodem,
+- planować zadania,
+- testować,
+- wdrażać aplikacje,
+- monitorować działanie oprogramowania
+
+Co zawiera GitLab?
+- Repozytorium Git - Przechowywanie i wersjonowanie kodu źródłowego.
+- CI/CD - Automatyczne testowanie, budowanie i wdrażanie
+aplikacji (Continuous Integration / Continuous Delivery)
+- Issue tracker - Zarządzanie zadaniami i błędami ( jak Jira czy Trello).
+- Merge requests (MR) - Wnioski o połączenie zmian w kodzie - do przeglądu i
+zatwierdzenia przez zespół.
+- Wiki i dokumentacje - Wbudowane narzędzia do dokumentowania projektu.
+- Security & DevSecOps - Automatyczne skanowanie kodu pod kątem luk bezpieczeństwa.
+
+Wersje GitLaba:
+- GitLab.com - gotowa usługa w chmurze (podobnie jak GitHub).
+- Self_hosted GitLab (Community/Enterprise Edition) - można
+zainstalować GitLaba na własnym serwerze, co daje większą
+kontrolę nad danymi i konfiguracją.
+
+Do czego używa się GitLaba?
+- Współpracy programistów nad wspólnym kodem.
+- Automatyzacji procesu budowania i testowania aplikacji.
+- Monitorowania błędów i pracy zespołu.
+- Bezpiecznego wdrażania kodu na serwery produkcyjne.
+
+Przykład: CI/CD w GitLab:
+Plik .gitlab-ci.yml pozwala automatycznie:
+- uruchomić testy jednostkowe po każdym "commicie"
+- zbudować aplikację
+- wdrożyć ją np. na serwer stagingowy lub produkcyjny
