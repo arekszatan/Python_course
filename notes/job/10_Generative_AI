@@ -1,0 +1,35 @@
+Generative AI (sztuczna inteligencja generatywna) to dziedzina
+sztucznej inteligencji, która zajmuje się tworzeniem nowych treści,
+taki jak:
+- tekst (np. artykuły, e-maile, kod),
+- obrazy (np. ilustracje, zdjęcia),
+- muzyka
+- video
+- dane syntetyczne (np. dane medyczne do testów)
+- rozmowy (np, chatboty jak ChatGPT)
+
+Jak to działa?
+Generatywna AI używa modeli uczenia maszynowego, a szczególnie
+modeli głębokiego uczenia (deep learning), aby nauczyć się wzorców
+w danych i generować nowe, podobne dane.
+- Modele językowe (np. GPT, BERT, Claude) - generują tekst
+- Modele rozproszone (diffusion models) (np. DALL-E, Stable
+Diffusion) - generują obrazy.
+- GAN ( Generative Adversarial Networks) - sieci rywalizujące,
+tworzące realistyczne obrazy, głosy, wideao itd.
+- Autoenkodery i VAE (Variational Autoencoders) - do kompresji i
+generowania danych.
+
+Przykłady zastosowania:
+- Biznes - Generowanie raportów, automatyzacja e-mail, chatbory klienta
+- Edukacja - Pomoc w nauce, generowanie quizów, streszczenia
+- Sztuka i design - Tworzenie grafik, stylizacji, logo
+- Badania naukowe - Generowanie danych eksperymentalnych
+- Media i komunikacja - Tworzenie tekstów, artykułów, tłumaczeń
+- Programowanie - Generowanie kodu, komentarzy, dokumentacji
+
+Przykład: Co robi generatywny model jak ChatGPT?
+Dostaje polecenie (prompt), np.
+"Napisz wiersz o zachodzie słońca"
+I generuje nowy tekst, który nie był wcześniej zapisany w żadnym
+dokumencie, ale jest sensowny i stylowy.
