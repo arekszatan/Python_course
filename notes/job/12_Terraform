@@ -1,0 +1,44 @@
+Terraform to narzędzie typu Infrastructure as Code (IaC) stworzone
+przez firmę HashiCorp. Służy do automatycznego tworzenia,
+zarządzania i wersjonowania infrastruktury ID - takiej jak serwery,
+bazy danych, sieci itp. - w sposób deklaratywny, za pomocą plików tekstowych.
+
+Co to znaczy w praktyce?
+Zamiast klikać w interfejs AWS, Azure czy Google Cloud, piszesz plik
+.tf z opisem:
+
+resource "aws_instance" "web" {
+  ami           = "ami-123456"
+  instance_type = "t2.micro"
+}
+
+A następnie jednym poleceniem:
+
+terraform apply
+
+tworzysz (lub aktualizujesz) infrastrukture dokładnie tak, jak ją opisałeś.
+
+Co robi Terraform?
+- Provisioning - Tworzy zasoby: maszyny wirtualne, bazy danych, sieci itd.
+- Planowanie zmian - Pokazuje, co się zmieni zanim to zrobi (terraform plan).
+- Wersjonowanie infrastruktury - Możesz śledzić historię zmian w kodzie, jak w Git.
+- Multi-cloud - Obsługuje wiele dostawców chmury: AWS, Azure, GCP, Kubernates, Docer i inne.
+- Modularność - Możesz pisać moduły do wielokrotnego użycia
+(np. dla całych środowisk testowych).
+
+Typowy cykl pracy?
+1. terraform init - inicjalizacja projektu
+2. terraform plan - pokazuje, co zostanie zmienione
+3. terraform apply - wykonuje zmiany
+4. terraform destory - usuwa całą infrastrukture
+
+Terraform a bezpieczeństwo?
+- Stan infrastruktury przechowywany jest w pliku
+terraform.tfstate (można go trzymać np. w S3 z blokadą zapisu).
+- Wersjonowanie i audyt zmian to standard.
+
+Kiedy warto używać Terraform?
+- Przy pracy z chmurą (AWS, Azure, GCP).
+- Przy tworzeniu środowisk dev/staging/production.
+- Gdy chcesz zautomatyzować i unifikować zarządzanie infrastrukturą.
+- Gdy zależy Ci na powtarzalności i minimalizacji błędów ludzkich.
