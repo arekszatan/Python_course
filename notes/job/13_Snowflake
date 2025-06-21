@@ -1,0 +1,43 @@
+Snowflake to nowoczesna, chmurowa platforma do przechowywania i
+analizy danych - znana jako cloud data warehouse (magazyn danych w chmurze).
+Umożliwia firmom składowanie ogromnych ilości danych, szybkie ich przetwarzanie
+i analizowanie w czasie rzeczywistym, bez konieczności zarządzania infrastrukturą.
+
+Co wyróżnia Snowflake?
+1. Całkowicie chmurowa architektura - działa na AWS, Google, Cloud i Azure.
+2. Oddzielanie warstwy obliczeniowej od danych - możesz skalować
+przetwarzanie niezależnie od przechowywania.
+3. Łatwość integracji z BI (np. Power BI, Tableau).
+4. Wsparcie dla SQL - możesz używać klasycznych zapytań SQL.
+5. Dostęp do danych w czasie rzeczywistym - m.in funkcja
+"zero-copy cloning" i "time travel".
+
+Jak działa Snowflake?
+Snowflake rozdziela swoją architekturę na 3 warstwy:
+- Storage - Przechowuje dane w formie zoptymalizowanej ko kompresji
+szybkiego dostępu.
+- Compute - Tzw. "Virtual Warehouses" - wykonują zapytania i
+przetwarzanie danych. Można je skalować automatycznie.
+- Cloud Services - Zarządza bezpieczeństwem, dostępem, optymalizacją zapytań itd.
+
+Do czego używa się Snowflake?
+- Analityka biznesowa (BI)
+- Hurtowanie danych (data warehousing)
+- Przetwarzanie strumieniowe (streaming)
+- Uczenie maszynowe ( w połączeniu z narzędziami ML)
+- Data sharing - bezpieczne udostępnianie danych między organizacjami.
+
+Przykład zapytania SQL w Snowflake:
+SELECT department, COUNT(*)
+FROM employees
+WHERE hire_date > '2023-01-01'
+GROUP BY department;
+
+Czym się różni od tradycyjnych hurtowni danych?
+
+| Tradycyjna hurtownia              | Snowflake                                         |
+| --------------------------------- | ------------------------------------------------- |
+| Wymaga zarządzania infrastrukturą | Działa w pełni w chmurze                          |
+| Ograniczona skalowalność          | Automatyczne skalowanie                           |
+| Czasochłonne wdrożenia            | Szybki onboarding i dostęp z poziomu przeglądarki |
+| Często drogie utrzymanie          | Elastyczny model płatności „za zużycie”           |
