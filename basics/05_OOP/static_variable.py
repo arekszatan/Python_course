@@ -1,9 +1,16 @@
 
 class Employee:
+    """Employee class describing company employee"""
+    # static variable for all objects based no Employee
     num_employees = 0
     employees_list = []
 
     def __init__(self, name):
+        """Constructor for employee class"""
+        """
+        linia 1
+        linia 2
+        """
         self.name = name
 
         Employee.num_employees += 1
@@ -23,3 +30,16 @@ employee4 = Employee("Karol")
 print("Employee.num_employees: ", Employee.num_employees)
 print(" ")
 employee1.print_all_employees()
+
+help(Employee)
+print(Employee.__doc__)
+print(Employee.__name__)
+print(Employee.__module__)
+
+print("name attr in Employee: ",hasattr(employee1, "name"))
+print("name attr in Employee: ",hasattr(employee1, "city"))
+employee1.city = "Krk"
+print("name attr in Employee: ",hasattr(employee1, "city") )
+
+setattr(employee1, "name", "Kasia")
+print("employee1.name: ", getattr(employee1, "name"))
