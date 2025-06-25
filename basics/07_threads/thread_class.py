@@ -17,9 +17,9 @@ class SomeThread(threading.Thread):
         print(self.thread_name, " ended!")
 
 
-t1 = SomeThread("Thread-1", 0.1)
-t2 = SomeThread("Thread-2", 0.3)
-t3 = SomeThread("Thread-3", 0.4)
+t1 = SomeThread("Thread-1", 0.001)
+t2 = SomeThread("Thread-2", 0.003)
+t3 = SomeThread("Thread-3", 0.004)
 
 t1.start()
 t2.start()
