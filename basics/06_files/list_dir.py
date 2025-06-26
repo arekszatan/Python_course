@@ -8,7 +8,7 @@ print(files) # current working dir
 files1 = os.listdir("..")
 print(files1)
 
-files2 = os.listdir("../programs")
+files2 = os.listdir("../../programs")
 print(files2)
 
 files3 = os.listdir("../01_data_types")
