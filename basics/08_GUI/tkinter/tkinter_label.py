@@ -6,7 +6,7 @@ os.chdir(script_dir)
 
 window = tk.Tk()
 window.title("Application")
-logo = tk.PhotoImage(file="img.png")
+logo = tk.PhotoImage(file="../img.png")
 
 label1 = tk.Label(
     window,
