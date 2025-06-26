@@ -1,5 +1,5 @@
 # pip install requests
-import requests
+import requests_1
 
 def fetch_exchange_rates():
     """
@@ -19,3 +19,7 @@ def fetch_exchange_rates():
 
 if __name__ == '__main__':
     fetch_exchange_rates()
+
+
+def post(url, data):
+    return None
