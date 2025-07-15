@@ -2,10 +2,10 @@ import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 # Dane do połączenia z bazą danych PostgreSQL
-host = "localhost"
+host = "127.0.0.1"
 user = "postgres"
-password = "admin"
-database = "py_test" # Łączymy się z bazą domyślną, aby stworzyć nową bazę danych
+password = "test123"
+database = "py_test"# Łączymy się z bazą domyślną, aby stworzyć nową bazę danych
 
 try:
     # Nawiązywanie połączenia z bazą danych
@@ -19,7 +19,7 @@ try:
 
     # Rozszerzenie tabeli 'employee' o dodatkowe kolumny
     alter_table_query = """
-    ALTER TABLE employee
+    ALTER TABLE employees
     ADD COLUMN email VARCHAR(100) default 'unknown@email.com',
     ADD COLUMN salary DECIMAL DEFAULT 0.0
     """
@@ -27,7 +27,7 @@ try:
 
     # Aktualizacja niektórych rekordów
     update_records_query = """
-    UPDATE employee
+    UPDATE employees
     SET email = 'anna.kowalska@example.com', salary = 5000.00
     WHERE id = 2
     """
@@ -38,12 +38,12 @@ try:
 
     # Wyświetlanie zaktualizowanych danych rekordów
     select_query = """
-    SELECT * FROM employee
+    SELECT * FROM employees
     """
     cursor.execute(select_query)
     records = cursor.fetchall()
 
-    print("Zaktualizowane dane z tabeli 'employee'")
+    print("Zaktualizowane dane z tabeli 'employees'")
     for row in records:
         print(row)
 

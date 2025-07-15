@@ -2,10 +2,10 @@ import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 # Dane do połączenia z bazą danych PostgreSQL
-host = "localhost"
+host = "127.0.0.1"
 user = "postgres"
-password = "admin"
-database = "py_test" # Łączymy się z bazą domyślną, aby stworzyć nową bazę danych
+password = "test123"
+database = "py_test"# Łączymy się z bazą domyślną, aby stworzyć nową bazę danych
 
 try:
     # Nawiązywanie połączenia z bazą danych
@@ -19,7 +19,7 @@ try:
 
     # Dodawanie pojedyńczego rekordu do tabeli 'employee'
     insert_query_single = """
-    INSERT INTO employee (first_name, last_name, birth_day, position)
+    INSERT INTO employees (first_name, last_name, birth_day, position)
     VALUES ('Jan', 'Kowalski', '1980-01-01', 'Manager')
     """
     cursor.execute(insert_query_single)
@@ -33,7 +33,7 @@ try:
 
     # Dodawanie wielu rekordów za jednym razem
     insert_query_multiple = """
-    INSERT INTO employee (first_name, last_name, birth_day, position)
+    INSERT INTO employees (first_name, last_name, birth_day, position)
     VALUES (%s, %s, %s, %s)
     """
     cursor.executemany(insert_query_multiple, employee_to_insert)

@@ -2,11 +2,10 @@ import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 # Dane do połączenia z bazą danych PostgreSQL
-host = "localhost"
+host = "127.0.0.1"
 user = "postgres"
-password = "admin"
-database = "py_test" # Łączymy się z bazą domyślną, aby stworzyć nową bazę danych
-
+password = "test123"
+database = "py_test"
 try:
     # Nawiązywanie połączenia z bazą danych
     connection = psycopg2.connect(
@@ -19,7 +18,7 @@ try:
 
     # Zapytanie SQL do utworzenia nowej tabeli
     create_table_query = """
-    CREATE TABLE IF NOT EXISTS employee (
+    CREATE TABLE IF NOT EXISTS employees (
     id SERIAL PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),

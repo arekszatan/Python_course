@@ -2,10 +2,10 @@ import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 # Dane do połączenia z bazą danych PostgreSQL
-host = "localhost"
+host = "127.0.0.1"
 user = "postgres"
-password = "admin"
-database = "py_test" # Łączymy się z bazą domyślną, aby stworzyć nową bazę danych
+password = "test123"
+database = "py_test"# Łączymy się z bazą domyślną, aby stworzyć nową bazę danych
 
 try:
     # Nawiązywanie połączenia z bazą danych
@@ -19,13 +19,13 @@ try:
 
     # Aktualizacja wszystkich rekordów
     update_query_all = """
-    UPDATE employee
+    UPDATE employees
     SET position = 'Senior Manager'
     """
     cursor.execute(update_query_all)
 
     update_query_single = """
-    UPDATE employee
+    UPDATE employees
     SET position = 'Lead Developer'
     WHERE id = 1
     """
@@ -34,7 +34,7 @@ try:
     # Zatwierdzanie zmian
     connection.commit()
 
-    print("Rekordy zostały zaktualizowane w tabeli 'employee'")
+    print("Rekordy zostały zaktualizowane w tabeli 'employees'")
 
 
 except (Exception, psycopg2.DatabaseError) as error:

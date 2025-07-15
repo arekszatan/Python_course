@@ -4,11 +4,10 @@ import random
 import datetime
 
 # Dane do połączenia z bazą danych PostgreSQL
-host = "localhost"
+host = "127.0.0.1"
 user = "postgres"
-password = "admin"
-database = "py_test" # Łączymy się z bazą domyślną, aby stworzyć nową bazę danych
-
+password = "test123"
+database = "py_test"
 try:
     # Nawiązywanie połączenia z bazą danych
     connection = psycopg2.connect(
@@ -27,14 +26,14 @@ try:
         salary = round(random.uniform(3000, 7000), 2)
 
         insert_query = """
-        INSERT INTO employee (first_name, last_name, birth_day, position, salary)
+        INSERT INTO employees (first_name, last_name, birth_day, position, salary)
         VALUES (%s, %s, %s, %s, %s)
         """
         cursor.execute(insert_query, (first_name, last_name, birth_day, position, salary))
 
     # Zapytanie z użyciem AND
     select_query_and = """
-    SELECT * FROM employee
+    SELECT * FROM employees
     WHERE position = 'Developer' AND salary > 5000
     """
     cursor.execute(select_query_and)
@@ -45,7 +44,7 @@ try:
 
     # Zapytanie z użyciem podwójnego AND
     select_query_double_and = """
-    SELECT * FROM employee
+    SELECT * FROM employees
     WHERE position = 'Manager' AND salary > 4000 AND birth_day > '1990-01-01'
     """
     cursor.execute(select_query_double_and)

@@ -2,11 +2,10 @@ import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 # Dane do połączenia z bazą danych PostgreSQL
-host = "localhost"
+host = "127.0.0.1"
 user = "postgres"
-password = "admin"
-database = "postgres" # Łączymy się z bazą domyślną, aby stworzyć nową bazę danych
-
+password = "test123"
+database = "py_test"
 try:
     # Nawiązywanie połączenia z bazą danych
     connection = psycopg2.connect(

@@ -2,11 +2,10 @@ import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 # Dane do połączenia z bazą danych PostgreSQL
-host = "localhost"
+host = "127.0.0.1"
 user = "postgres"
-password = "admin"
-database = "py_test" # Łączymy się z bazą domyślną, aby stworzyć nową bazę danych
-
+password = "test123"
+database = "py_test"
 try:
     # Nawiązywanie połączenia z bazą danych
     connection = psycopg2.connect(
@@ -19,12 +18,12 @@ try:
 
     # Zapytanie SQL z użyciem ORDER BY do sortowania danych
     select_query = """
-    SELECT id , first_name, last_name, salary FROM employee ORDER BY id DESC
+    SELECT id , first_name, last_name, salary FROM employees ORDER BY id DESC
     """
     cursor.execute(select_query)
     records = cursor.fetchall()
 
-    print("Dane z tabeli 'employee' posortowane według wynagrodzenia id (malejąco):")
+    print("Dane z tabeli 'employees' posortowane według wynagrodzenia id (malejąco):")
     for row in records:
         print(f"ID: {row[0]}, Imię: {row[1]}, Nazwisko: {row[2]}, Wynagrodzenie: {row[3]}")
 

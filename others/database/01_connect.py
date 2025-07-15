@@ -1,9 +1,9 @@
 import psycopg2
 
 # Dane do połączenia z bazą danych PostgreSQL
-host = "localhost"
+host = "127.0.0.1"
 user = "postgres"
-password = "admin"
+password = "test123"
 database = "py_test"
 
 # Nawiązywanie połączenia z bazą danych

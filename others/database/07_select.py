@@ -2,11 +2,10 @@ import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 # Dane do połączenia z bazą danych PostgreSQL
-host = "localhost"
+host = "127.0.0.1"
 user = "postgres"
-password = "admin"
-database = "py_test" # Łączymy się z bazą domyślną, aby stworzyć nową bazę danych
-
+password = "test123"
+database = "py_test"
 try:
     # Nawiązywanie połączenia z bazą danych
     connection = psycopg2.connect(
@@ -19,14 +18,14 @@ try:
 
     # Zapytanie SQL do odczytu danych z tabeli 'employee'
     select_query = """
-    SELECT * FROM employee
+    SELECT * FROM employees
     """
     cursor.execute(select_query)
 
     # Pobieranie wyników zapytania
     records = cursor.fetchall()
 
-    print("Dane z tabeli 'employee'")
+    print("Dane z tabeli 'employees'")
     for row in records:
         print(f"ID: {row[0]}, Imię: {row[1]}, Nazwisko: {row[2]}, Stanowisko: {row[4]}")
 
