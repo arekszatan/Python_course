@@ -3,7 +3,7 @@ import psycopg2
 host = "127.0.0.1"
 user = "postgres"
 password = "test123"
-database = "py_test"
+database = "postgres"
 
 connection = None
 cursor = None
